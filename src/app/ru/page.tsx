@@ -1,6 +1,6 @@
 'use client';
 
-import Header, { notoSans, lexendExa, roboto } from '@/components/HeaderEst';
+import Header, { notoSans, lexendExa, roboto } from '@/components/Header';
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -13,6 +13,7 @@ import contactUsPhoto1 from '@/images/contact_us_photo1.jpg';
 import contactUsPhoto1Shadow from '@/images/contact_us_photo1_shadow.png';
 
 export default function Home() {
+
 
   // useEffect hook to handle smooth scrolling to sections
   useEffect(() => {
@@ -58,7 +59,7 @@ export default function Home() {
           />
           {/* Gallery Button - now with Roboto font and default letter spacing */}
           <a
-            href="/gallery"
+            href="/ru/gallery"
             className={`${roboto.className} absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2
                       items-center justify-center rounded-[4px] border-[1px] md:border-[2px] border-white
                       text-center font-black text-[16px] tracking-[0.02em] text-white hover:scale-110 transition-transform`}
@@ -69,7 +70,7 @@ export default function Home() {
               padding: '0.35em 0.8em'
             }}
           >
-            GALERII
+            ГАЛЕР<span className='tracking-[0.08em]'>ЕЯ</span>
           </a>
         </div>
       </section>
@@ -84,15 +85,15 @@ export default function Home() {
             <div className="flex flex-col gap-[4vh] md:gap-[8vh] md:justify-center">
               {/* "О нас" and "Качество" text blocks */}
               <div className="flex flex-col">
-                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="font-bold text-[#183058]">Meist</h2>
+                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="font-bold text-[#183058]">О нас</h2>
                 <p style={{ fontSize: 'clamp(12px, 2.0vw, 14px)' }} className="mt-[12px]">
-                  Artteam on kõrgelt kvalifitseeritud spetsialistide meeskond portaalide, uste ja rõduklaaside paigaldamise teenuste valdkonnas. Arvestame klientide erisoove ja töötame välja iga kodu jaoks optimaalse lahenduse. Meie spetsialistid on alati valmis teid nõu ja toetusega aitama!
+                  Artteam — команда высококвалифицированных специалистов в сфере услуг, связанных с установкой порталов, дверей, остекления балконов. Мы учитываем особые пожелания наших клиентов и разрабатываем оптимальное решение для каждого дома. Наши специалисты всегда готовы помочь вам советом и поддержкой!
                 </p>
               </div>
               <div className="flex flex-col">
-                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="text-3xl sm:text-4xl font-bold text-[#183058]">Kvaliteet</h2>
+                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="text-3xl sm:text-4xl font-bold text-[#183058]">Качество</h2>
                 <p style={{ fontSize: 'clamp(12px, 2.0vw, 14px)' }}  className="mt-[12px] text-base sm:text-lg">
-                  Lükanduksed on lihtsad ja hõlpsasti kasutatavad. Tänu madalale lävele sobivad portaalid isegi lastega peredesse.
+                  Раздвижные двери просты и удобны в эксплуатации. А благодаря низкому порогу, порталы подходят даже для домов, где живут семьи с детьми.
                 </p>
               </div>
             </div>
@@ -116,15 +117,15 @@ export default function Home() {
             <div className="flex flex-col gap-[4vh] md:gap-[8vh] md:justify-center md:order-2">
               {/* "Сотрудничество" and "Простота" text blocks */}
               <div className="flex flex-col">
-                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="text-3xl sm:text-4xl font-bold text-[#183058]">Koostöö</h2>
+                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="text-3xl sm:text-4xl font-bold text-[#183058]">Сотрудничество</h2>
                 <p style={{ fontSize: 'clamp(12px, 2.0vw, 14px)' }}  className="mt-[12px] text-base sm:text-lg">
-                  Teeme pidevalt koostööd nii oma ala professionaalide kui ka lõppklientidega. Mõistame, et rahulolev klient on meie peamine visiitkaart, olgu selleks ehitusettevõte, kinnisvarabüroo või eramu.
+                  Мы постоянно сотрудничаем как с профессионалами в своей области, так и с конечными клиентами. Мы понимаем, что довольный клиент — наша главная визитная карточка, будь то строительная компания, агентство недвижимости или частный дом.
                 </p>
               </div>
               <div className="flex flex-col">
-                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="text-3xl sm:text-4xl font-bold text-[#183058]">Lihtsus</h2>
+                <h2 style={{ fontSize: 'clamp(16px, 3.5vw, 24px)' }} className="text-3xl sm:text-4xl font-bold text-[#183058]">Простота</h2>
                 <p style={{ fontSize: 'clamp(12px, 2.0vw, 14px)' }}  className="mt-[12px] text-base sm:text-lg">
-                  Me teame, kui keeruline võib olla akende ja uste ostmise ja paigaldamise protsess. Aastakümnete jooksul oleme oma teenused oma klientidele võimalikult mugavaks muutnud. Seetõttu lubame teid aidata kogu protsessi vältel: alates planeerimisest kuni müügijärgse teeninduseni.
+                  Мы знаем, насколько сложным может быть процесс покупки и установки окон и дверей. За десятилетия мы сделали наши услуги максимально удобными для клиентов. Поэтому мы обещаем помогать вам на протяжении всего процесса: от планирования до послепродажного обслуживания.
                 </p>
               </div>
             </div>
@@ -143,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Contact Us Section */}
-      <section id="contact" className="flex flex-col items-center w-full px-4 mt-[8vh] mb-[20vh] scroll-mt-[110px]">
+      <section id="contact" className="flex flex-col items-center w-full px-4 mt-[8vh] mb-[8vh]">
         {/* Contact us photo - now responsive */}
         <div className="artteam-hero-image-container">
           <Image
