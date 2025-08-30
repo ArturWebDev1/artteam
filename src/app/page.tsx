@@ -58,7 +58,7 @@ export default function Home() {
           />
           {/* Gallery Button - now with Roboto font and default letter spacing */}
           <a
-            href="/gallery"
+            href="gallery"
             className={`${roboto.className} absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2
                       items-center justify-center rounded-[4px] border-[1px] md:border-[2px] border-white
                       text-center font-black text-[16px] tracking-[0.02em] text-white hover:scale-110 transition-transform`}

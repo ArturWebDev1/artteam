@@ -2,6 +2,7 @@
 
 import Header, { notoSans, lexendExa, roboto } from '@/components/Header';
 
+import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -58,8 +59,8 @@ export default function Home() {
             className="rounded-[16px] object-cover"
           />
           {/* Gallery Button - now with Roboto font and default letter spacing */}
-          <a
-            href="/ru/gallery"
+          <Link
+            href="ru/gallery"
             className={`${roboto.className} absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2
                       items-center justify-center rounded-[4px] border-[1px] md:border-[2px] border-white
                       text-center font-black text-[16px] tracking-[0.02em] text-white hover:scale-110 transition-transform`}
@@ -71,7 +72,7 @@ export default function Home() {
             }}
           >
             ГАЛЕР<span className='tracking-[0.08em]'>ЕЯ</span>
-          </a>
+          </Link>
         </div>
       </section>
 
