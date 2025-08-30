@@ -131,6 +131,7 @@ export default function Header() {
                 </svg>
             </button>
 
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#B2C900]">Esileht</Link>
             <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#B2C900]">Kontakt</Link>
             <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#B2C900]">Teenused</Link>
             <Link href="/#about-us" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#B2C900]">Meist</Link>
